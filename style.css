@@ -1,0 +1,84 @@
+body{
+    margin: 0%;
+}
+
+.main--div{
+    background: #E3CFCF; 
+    width: 100%;
+    height: 100%;
+    position: fixed;    
+}
+
+.main--img-displayed{  
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    float:left; 
+}
+
+.main--content{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--content-centered{
+    padding: 100px;
+}
+
+.content--title{
+    font-size: 32px;
+    text-align: center;
+}
+
+.content--text{
+    font-size: 18px;
+    text-align: center;
+    max-height: fit-content;
+}
+
+.content--button{    
+    box-sizing: border-box;
+    padding: 12px 24px;
+    gap: 2px;
+    width: 170px;
+    height: 52px;
+    border: 1px solid #000000;
+    background: transparent;    
+}
+
+.content--buttonDiv-centered{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 596px){
+    .main--content-centered{
+        padding: 20px;
+        
+    }
+
+    .main--img-displayed{  
+        width: 100%;
+        height: 50%;
+    }
+
+    .main--content{
+        width: 100%;
+        height: 50%; 
+    }
+
+    .content--title{
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .content--text{
+        font-size: 16px;
+        text-align: center;
+    }
+}
